@@ -45,7 +45,7 @@ int (*f)(va_list ap, modifs *f);
 
 /* function prototypes */
 int _printf(const char *format, ...);
-int (*get_print(char s))(va_list, modifs *);
+int (*fetch_print(char s))(va_list, modifs *);
 int get_flags(char s, modifs *f);
 int print_string(va_list l, modifs *f);
 int print_char(va_list l, modifs *f);
