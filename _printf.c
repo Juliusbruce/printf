@@ -27,13 +27,13 @@ for (; *p; p++)
 			continue;
 		}
 		while (get_flags(*p, &prefixes))
-		p++;
+			p++;
 		pfunction = fetch_print(*p);
 		len += (pfunction)
-		? pfunction(arguments, &prefixes)
-		: _printf("%%%c", *p);
+			? pfunction(arguments, &prefixes)
+			: _printf("%%%c", *p);
 	} else
-	len += _putchar(*p);
+		len += _putchar(*p);
 }
 _putchar(-1);
 va_end(arguments);
