@@ -8,7 +8,7 @@
 *
 * Return: 1 if a flag has been turned on, 0 otherwise
 */
-int get_flags(char s, mods *f)
+int get_flags(char s, modifs *f)
 {
 	_Bool modifier = true;
 
