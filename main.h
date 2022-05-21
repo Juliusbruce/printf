@@ -23,12 +23,11 @@
  * @space: flag for the ' ' character
  * @hash: flag for the '#' character
  */
-
 typedef struct modifiers
 {
-_Bool plus;
-_Bool space;
-_Bool hash;
+	_Bool plus;
+	_Bool space;
+	_Bool hash;
 } modifs;
 
 /**
@@ -37,11 +36,10 @@ _Bool hash;
  * @c: format specifier for character
  * @f: pointer to printing function
  */
-
 typedef struct functionHandler
 {
-char c;
-int (*f)(va_list ap, modifs *f);
+	char c;
+	int (*f)(va_list ap, modifs *f);
 } fh;
 
 /* function prototypes */

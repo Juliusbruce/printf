@@ -11,8 +11,8 @@ int print_string(va_list l, modifs *f)
 {
 	char *s = va_arg(l, char *);
 	(void)f;
-if (!s)
-	s = NULL_STRING;
+	if (!s)
+		s = NULL_STRING;
 	return (_puts(s));
 }
 
