@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdarg.h>
 
 /**
 * _printf - produces a formatted output
@@ -6,7 +7,9 @@
 * Description: this function will call the fetch_print() function
 * Return: formatted output string length
 */
+
 int _printf(const char *format, ...)
+
 {
 	register short len = 0;
 	int (*pfunction)(va_list, modifs *);
@@ -38,4 +41,5 @@ for (; *p; p++)
 _putchar(-1);
 va_end(arguments);
 return (len);
+
 }
