@@ -31,7 +31,7 @@ _Bool hash;
 } modifs;
 
 /**
- * struct printHandler - struct to choose the appropriate function
+ * struct functionHandler - struct to choose the appropriate function
  * subject to the format specifier passsed to _printf()
  * @c: format specifier for character
  * @f: pointer to printing function
