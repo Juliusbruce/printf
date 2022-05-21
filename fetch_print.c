@@ -14,18 +14,18 @@
 int (*fetch_print(char s))(va_list, modifs *)
 
 {
-fh func_arr[] = {
-{'s', print_string},
-{'c', print_char},
-{'%', print_percent},
-{NUL, NULL}
-};
+	fh func_arr[] = {
+		{'s', print_string},
+		{'c', print_char},
+		{'%', print_percent},
+		{NUL, NULL}
+	};
 
-register short i;
+	register short i;
 
-for (i = 0; func_arr[i].c; i++)
-if (func_arr[i].c == s)
-return (func_arr[i].f);
-return (NULL);
-
+	for (i = 0; func_arr[i].c; i++)
+		if (func_arr[i].c == s)
+			return (func_arr[i].f);
+	
+	return (NULL);
 }
